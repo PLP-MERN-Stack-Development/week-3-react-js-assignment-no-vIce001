@@ -1,7 +1,9 @@
 import { useState } from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
-import Card from "../components/TaskCard";
+import { Card } from "../components/ui/card";
 import Button from "../components/Button";
+import TaskCard from "../components/TaskManager";
+
 
 const FILTERS = {
   All: () => true,
@@ -57,21 +59,12 @@ export default function Tasks() {
       </div>
       <ul>
         {tasks.filter(FILTERS[filter]).map((task) => (
-          <li
-            key={task.id}
-            className="flex items-center justify-between mb-2"
-          >
-            <span
-              className={`flex-1 cursor-pointer ${
-                task.completed ? "line-through text-gray-400" : ""
-              }`}
-              onClick={() => toggleTask(task.id)}
-            >
-              {task.text}
-            </span>
-            <Button variant="danger" onClick={() => deleteTask(task.id)}>
-              Delete
-            </Button>
+          <li key={task.id}>
+            <TaskCard
+              task={task}
+              onToggle={() => toggleTask(task.id)}
+              onDelete={() => deleteTask(task.id)}
+            />
           </li>
         ))}
       </ul>
