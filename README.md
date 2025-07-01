@@ -42,6 +42,7 @@ You will:
 
 ## Project Structure
 
+```
 src/
 ├── components/       # Reusable UI components
 ├── pages/           # Page components
@@ -49,7 +50,8 @@ src/
 ├── context/         # React context providers
 ├── api/             # API integration functions
 ├── utils/           # Utility functions
-└── App.jsx          # Main application component
+└── App.jsx/         # Main application component
+```
 
 ## Submission
 
@@ -115,6 +117,8 @@ npm run dev
 Visit <http://localhost:5173> in your browser.
 
 ## 🗂️ Project Structure
+
+```
 src/
 ├── components/       # Reusable UI components (Button, Card, Navbar, Footer, Layout etc.)
 │   └── ui/           # UI primitives (button, card, avatar, etc.)
@@ -122,9 +126,10 @@ src/
 ├── hooks/            # Custom React hooks (useLocalStorage)
 ├── context/          # React context providers (ThemeContext)
 ├── utils/            # Utility functions (api.js)
-├── App.jsx           # Main application component
-├── main.jsx          # Entry point
-├── index.css         # Tailwind CSS styles
+├── App.jsx/          # Main application component
+├── main.jsx/         # Entry point
+├── index.css/         # Tailwind CSS styles
+```
 
 ## ✨ Usage
 - **Task Manager**: Go to the "Tasks" page to add, complete, delete, and filter your tasks.
