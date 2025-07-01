@@ -42,7 +42,6 @@ You will:
 
 ## Project Structure
 
-```
 src/
 ├── components/       # Reusable UI components
 ├── pages/           # Page components
@@ -51,7 +50,6 @@ src/
 ├── api/             # API integration functions
 ├── utils/           # Utility functions
 └── App.jsx          # Main application component
-```
 
 ## Submission
 
