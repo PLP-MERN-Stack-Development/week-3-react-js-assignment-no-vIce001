@@ -116,7 +116,7 @@ Visit <http://localhost:5173> in your browser.
 
 ## 🗂️ Project Structure
 src/
-├── components/       # Reusable UI components (Button, Card, Navbar, Footer, Layout, TaskManager, etc.)
+├── components/       # Reusable UI components (Button, Card, Navbar, Footer, Layout etc.)
 │   └── ui/           # UI primitives (button, card, avatar, etc.)
 ├── pages/            # Page components (Home, Tasks, ApiData)
 ├── hooks/            # Custom React hooks (useLocalStorage)
